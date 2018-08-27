@@ -193,6 +193,93 @@ header h2 {
     }
 }
 
+/*-------ABOUT---------*/
+.about {
+    background-color: #F7F7F7;
+}
+
+.about .grid li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.about .grid li h4 {
+    color: #2196F3;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.about .grid li p {
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .about .grid li {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
+
+    .about .grid li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .about .grid li {
+        flex-basis: 100%;
+    }
+}
+
+/*-------ILLUSTRATION---------*/
+.illustrations {
+    background-color: #FFF;
+}
+
+.illustrations .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px; 
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+.illustrations .grid li.small {
+    flex-basis: 40%;
+}
+
+.illustrations .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 1000px) {
+    .illustrations .grid li.small, .illustrations .grid li.large {
+        flex-basis: 100%;  
+    } 
+}
+
+/*-------CHAPTER 1---------*/
+.chap1 {
+    background-color: #F7F7F7;
+    margin-top: 0;
+}
+
+.chap1 p {
+    text-align: left;
+}
+
+.chap1 .song {
+    text-align: center;
+    width: 80%;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
 /*-------FOOTER---------*/
 footer {
     display: flex;
